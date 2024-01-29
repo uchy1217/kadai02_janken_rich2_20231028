@@ -1,0 +1,35 @@
+body{
+    width: 700px;
+}
+
+header{
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: aquamarine;
+}
+
+
+
+ul{
+    display:flex;  
+}
+
+li{
+    justify-content: center;
+}
+
+li:hover{
+    background-color: gray;
+}
+
+img{
+    width:200px
+}
+
+p{
+    text-align: center;
+    
+}

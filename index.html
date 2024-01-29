@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Janken</title>
+</head>
+<body background="./img/stadium.png">
+    <header>じゃんけん</header>
+
+    <main>
+        <p>ぐー、ちょき、ぱーを選んでね！</p>
+        <ul>
+            <li onclick="p_hands(1)" class="select_hand"><img src="img/janken_gu.png" alt=""></li>
+            <li onclick="p_hands(2)" class="select_hand"><img src="img/janken_choki.png" alt=""></li>
+            <li onclick="p_hands(3)" class="select_hand"><img src="img/janken_pa.png" alt=""></li>
+        </ul>
+    </main>
+    <ul>
+        <div>
+            <p>あなたの出した手は</p> 
+            <img id="u_hands" src="img/mark_question.png" alt="">
+        </div>
+        <div>
+            <p>コンピュータの出した手は</p>
+            <img id="pc_hands" src="img/mark_question.png" alt=""> 
+        </div>
+        <div>
+            <p>この勝負は</p> 
+            <img id="judgment" src="img/mark_question.png" alt="">
+        </div>
+    </ul>
+
+
+    <main>
+        <p>あなたの戦績</p> 
+        <ul>
+        <div>
+            <p>じゃんけんの回数</p>
+            <p><span id="total_count">0</span>回</p>
+            
+        </div>
+        <div>
+            <p>勝ち<span id="win_count">0</span>回</p>
+            <p>負け<span id="lose_count">0</span>回</p>
+            <p>引き分け<span id="draw_count">0</span>回</p>
+
+        </div>
+    </ul>
+    </main>
+<!-- js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/test.js"></script>
+</body>
+</html>
